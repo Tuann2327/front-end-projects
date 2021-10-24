@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  background-image: url("images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+}
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+button, input {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 25px;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 20vh auto 40px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.container section {
+  box-sizing: border-box;
+  width: 50%;
+}
+.container section:nth-of-type(1) {
+  color: white;
+  padding: 20px;
+}
+.container section:nth-of-type(1) h1 {
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  margin: 1.75rem 0px;
+}
+.container section:nth-of-type(1) p {
+  font-size: 0.8rem;
+}
+.container section:nth-of-type(2) button {
+  padding: 15px 25px;
+  background-color: #6055a5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+}
+.container section:nth-of-type(2) button span {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.733);
+}
+.container section:nth-of-type(2) form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 15px;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.container section:nth-of-type(2) form input {
+  border: 1px solid rgba(128, 128, 128, 0.185);
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.877);
+}
+.container section:nth-of-type(2) form button {
+  padding: 10px 25px;
+  background-color: #38cc8c;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 0px;
+  box-shadow: 0px 4px 0px 0px rgba(9, 134, 80, 0.651);
+}
+.container section:nth-of-type(2) form button:hover {
+  cursor: pointer;
+  background-color: #68dfab;
+}
+.container section:nth-of-type(2) form p {
+  width: 100%;
+  text-align: center;
+  font-size: 0.6rem;
+  margin: 0px;
+  color: rgba(0, 0, 0, 0.363);
+}
+.container section:nth-of-type(2) form p a {
+  font-weight: 600;
+  color: #f34f4f;
+}
+.container section:nth-of-type(2) form .warning {
+  margin: 5px 0px 0px;
+  text-align: end;
+  font-style: italic;
+  color: rgba(243, 79, 79, 0.5);
+  font-weight: 500;
+}
+.container section:nth-of-type(2) form .err {
+  border: 2px solid rgba(243, 79, 79, 0.5);
+  color: #df5151;
+}
+.container section:nth-of-type(2) form .hide {
+  display: none;
+}
+.container section:nth-of-type(2) form .err:focus {
+  outline: none;
+}
+
+footer p {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 50px auto 50px;
+    flex-direction: column;
+  }
+  .container section {
+    width: 100%;
+    text-align: center;
+  }
+  .container section:nth-of-type(2) button {
+    padding: 10px 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
