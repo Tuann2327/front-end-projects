@@ -1,0 +1,58 @@
+body{
+    background-color: #ffdcdc;
+}
+
+img{
+    width: 100%;
+}
+.griditems{
+    padding: 0px;
+}
+.row{
+    padding: 15px 0px;
+}
+
+.navbar a{
+    color: #ff9292;
+}
+.navbar-nav a{
+    color: white;
+}
+
+.text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text p{
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+}
+
+.text h1{
+    color: #ff9292;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.text img{
+    height: 128px;
+    width: 128px;
+}
+
+.text .lorem{
+    color: #ffb4b4;
+    font-size: 19px;
+    line-height: 2.25rem;
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+}
+
+.text p span{
+    color: #ff9292;
+}

@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:wght@600&display=swap");
+button {
+  background: white;
+  border: none;
+  padding: 11px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+body {
+  margin: 0px;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+header {
+  padding: 30px 50px 50px;
+  background-image: url("images/bg-hero-desktop.svg");
+  background-color: #ebfbff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+header * {
+  font-family: "Poppins", sans-serif;
+}
+header .main-intro {
+  display: flex;
+  flex-direction: column;
+  width: calc(40% - 50px / 2);
+}
+header .main-intro h1 {
+  margin: 2rem 0px 5px;
+  font-size: 1.8rem;
+}
+header .main-intro p {
+  margin: 30px 0px;
+  line-height: 1.5rem;
+  font-size: 0.85rem;
+}
+header .main-intro button {
+  color: white;
+  background-color: #ff52bf;
+}
+header img {
+  width: calc(60% - 50px /2);
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  width: auto;
+  height: 25px;
+}
+
+main {
+  padding: 100px 70px 280px;
+}
+main * {
+  font-family: "Open Sans", sans-serif;
+}
+main section {
+  margin: 30px 0px;
+  gap: 150px;
+  display: flex;
+  align-items: center;
+  padding: 40px 30px 40px 100px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.075);
+  border-radius: 15px;
+}
+main section .info {
+  width: 65%;
+}
+main section .info h2 {
+  margin: 15px 0px;
+  font-weight: 700;
+}
+main section .info p {
+  margin: 0px;
+  font-size: 0.9rem;
+  color: rgba(128, 141, 153, 0.644);
+}
+main section img {
+  width: 35%;
+}
+
+footer {
+  background-color: #00252e;
+  color: rgba(255, 255, 255, 0.801);
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 180px 100px 100px 100px;
+  font-size: 14px;
+  gap: 40px;
+}
+footer * {
+  font-family: "Open Sans", sans-serif;
+}
+footer .last-card {
+  width: 500px;
+  padding: 50px 100px;
+  color: #00252e;
+  background-color: white;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.075);
+  position: absolute;
+  bottom: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+footer .last-card h2 {
+  font-size: 1.6rem;
+  margin: 10px 0px 30px;
+}
+footer .last-card button {
+  color: white;
+  background-color: #ff52bf;
+  padding: 20px 60px;
+  border-radius: 60px;
+}
+footer .footer-logo {
+  width: 100%;
+}
+footer img {
+  filter: brightness(0) invert(1);
+}
+footer section {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc(45% - 70px);
+}
+footer section div {
+  display: flex;
+}
+footer section div p {
+  margin: 0px 20px;
+}
+footer section div img {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+footer section:nth-of-type(2) {
+  width: calc(55% - 70px);
+  flex-direction: row;
+}
+footer section:nth-of-type(2) div {
+  display: block;
+  width: 50%;
+}
+footer section:nth-of-type(2) div p {
+  margin-bottom: 20px;
+}
+footer .copyright {
+  text-align: end;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 1.3rem;
+  }
+
+  header .main-intro {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  header .main-intro button {
+    margin: auto;
+    width: 60%;
+  }
+  header img {
+    width: 100%;
+  }
+
+  main {
+    padding: 100px 30px 250px;
+  }
+  main section {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 50px;
+  }
+  main section .info {
+    text-align: center;
+    width: 100%;
+  }
+  main section .info p {
+    font-size: 1rem;
+  }
+  main section img {
+    width: 100%;
+  }
+  main section:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 120px 15px;
+  }
+  footer section {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer section .div {
+    width: 100%;
+  }
+  footer section:nth-of-type(2) {
+    gap: 0px;
+  }
+  footer section:nth-of-type(2) div {
+    width: 100%;
+  }
+  footer section:nth-of-type(2) div p {
+    width: 100%;
+    margin: 0px 0px 20px;
+  }
+  footer .last-card {
+    padding: 1.5rem 20px;
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
